@@ -11,13 +11,13 @@ fi
 
 case $DISTRO in
     ubuntu|debian|raspbian)
-        sudo apt update && sudo apt install -y base-devel
+        sudo apt update && sudo apt install -y build-essential
         ;;
     arch|manjaro)
         sudo pacman -Sy --noconfirm base-devel
         ;;
     fedora|centos|rhel)
-        sudo dnf install -y base-devel
+      udo dnf groupinstall "Development Tools"
         ;;
     *)
         echo "⚠️  Unknown Distro: $DISTRO."
