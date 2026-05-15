@@ -14,8 +14,8 @@ int stzt() {
                "./configure --enable-optimizations && "
                "make -j$(nproc) && "
                "make altinstall &&"
-              "cd python/");
-    } else {
+              "python3 ../pytho3");
+            } else {
       system("python3 ./pytho3");
       return 0;
     }
