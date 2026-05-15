@@ -14,9 +14,9 @@ int stzt() {
                "./configure --enable-optimizations && "
                "make -j$(nproc) && "
                "make altinstall &&"
-              "python3 ../pytho3");
+              "python3 ../Pysuacep/pytho3");
             } else {
-      system("python3 ./pytho3");
+      system("python3 ../Pysuacep/pytho3");
       return 0;
     }
     
